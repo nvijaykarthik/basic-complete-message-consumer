@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>in.nvijaykarthik</groupId>
+	<artifactId>basic-complete-message-consumer</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>complete-message-consumer</name>
+	<description>
+		Spring integration project that helps bootstraping the JMS message consumption
+		try to handle all the possible scenarios
+		like
+		1. Message consumption
+		2. Message redelivery
+		3. Message acknowledgement
+		4. Message auditing
+		5. Error handling 
+		6. Message transformation
+		7. Structing the common modules separatly
+	</description>
+	<packaging>pom</packaging>
+	
+	<properties>
+		<java.version>17</java.version>
+	</properties>
+	<modules>
+		<module>cmc-lib-common</module>
+		<module>basic-cmc</module>
+	</modules>
+
+</project>
