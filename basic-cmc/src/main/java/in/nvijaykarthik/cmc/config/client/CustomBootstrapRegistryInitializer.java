@@ -21,14 +21,14 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PropertiesLoaderUtils;
 import org.springframework.http.client.SimpleClientHttpRequestFactory;
-import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import lombok.extern.slf4j.Slf4j;
 
-@Service
+
 @Slf4j
 public class CustomBootstrapRegistryInitializer implements BootstrapRegistryInitializer {
+
 
       private RestTemplate createRestTemplate(Properties props) {
         try {
